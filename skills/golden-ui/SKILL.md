@@ -51,7 +51,17 @@ Analyze `$ARGUMENTS` for optical violations. For each issue found, note:
 
 **Optical padding** — Do cards/modals/alerts have equal padding that looks unequal? Does top padding compensate for CSS leading? Does border radius relate to content text size? See [components.md](reference/components.md)
 
-**Buttons & icons** — Are button paddings asymmetric when icons are present? Are icons sized at ~1.27× text size? Do stroke weights scale inversely with size? Are icons vertically shifted? See [components.md](reference/components.md)
+**Buttons & icons** — Are button paddings asymmetric when icons are present (icon side = 0.618em, other side = 1em)? Are icons sized at 1.272em? Do stroke weights scale inversely? Are icons shifted up by 0.128em? See [components.md](reference/components.md)
+
+**Menu items / selects** — Same asymmetric icon padding pattern as buttons. Does gap = padY / φ^0.125? Does border-radius equal vertical padding? See [components.md](reference/components.md)
+
+**Cards** — Does padding equal the largest child font-size? Is border-radius = font-size / line-height? Is optical correction applied per side (font-size / line-height)?
+
+**Text inputs** — Is the floating label positioned at -61.8% (golden ratio reciprocal)? Is input-wrap margin = bodyBoxHeight × 0.272?
+
+**Snackbar** — Is padding derived from line-height × 0.272? Is icon margin = 1em / √φ?
+
+**Section padding** — Is it offset one tier above component padding (section "xs" = size-lg)?
 
 **Color & interaction** — Do hover/focus/active states use opacity overlays or background mutations? Is there a surface elevation ladder? Do shadows include a contact shadow base? See [color-and-surfaces.md](reference/color-and-surfaces.md)
 
@@ -65,9 +75,14 @@ Priority order:
 1. **Optical padding** — `top_pad = font_size × (line_height / 1.618)`
 2. **Typography** — tighten line-height for large text, negative tracking for headlines
 3. **Spacing** — snap to nearest φ-power step. See [spacing.md](reference/spacing.md)
-4. **Buttons** — `padY = fontSize × 0.486`, `padX = 1em`. When icon present: side with icon gets `padX = fontSize / φ (0.618em)`, opposite side keeps `1em`. Both icons: both sides `0.618em`. Gap between icon and text: `padY / φ^0.125 (0.414em)`
-5. **Icons** — size at 1.272em, shift up 0.128em, inverse stroke scaling
-6. **State layers** — opacity overlays over background mutations
+4. **Buttons** — `padY = fontSize × 0.486`, `padX = 1em`. Icon side: `0.618em`, opposite: `1em`. Both icons: both `0.618em`. Gap: `padY / φ^0.125 (0.414em)`
+5. **Menu items / selects** — `padY = 1.618em × 0.272 (0.440em)`. Icon side: same as padY. No icon side: 1em. Gap: `padY / φ^0.125`. Border-radius = padY
+6. **Icons** — size `1.272em`, shift up `0.128em`, inverse stroke scaling
+7. **Cards** — padding = largest child font-size. Border-radius = font-size / line-height. Optical correction per side = font-size / line-height
+8. **Text inputs** — floating label at `-61.8%` (1/φ × 100). Input-wrap margin = bodyBoxHeight × 0.272
+9. **Snackbar** — padding = line-height × 0.272. Icon margin = 1em / √φ. Sub-pixel icon shift (-0.25px)
+10. **State layers** — opacity overlays (hover 0.16, focus 0.35, active 0.50), never mutate background
+11. **Section padding** — offset one tier: section "xs" = size-lg, "md" = size-2xl, etc.
 
 For each change, note in your response (not in code): `[file:line] what changed — why`
 
