@@ -1,5 +1,6 @@
 ---
 name: tokens
+user-invocable: true
 description: >
   Generate golden-ratio design tokens for a project. Creates a φ-based spacing scale,
   typography scale, and color system as CSS custom properties, Tailwind config, or

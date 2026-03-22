@@ -2,6 +2,7 @@
   "name": "golden-ui",
   "description": "Golden-ratio design science for any UI library. Makes interfaces feel balanced and intentional by applying φ-derived corrections to spacing, typography, padding, icons, and color.",
   "version": "1.0.0",
+  "skills": "./.claude/skills",
   "author": {
     "name": "hoangvu12"
   },

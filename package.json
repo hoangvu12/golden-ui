@@ -20,7 +20,7 @@
   },
   "files": [
     ".claude-plugin/",
-    "skills/",
+    ".claude/skills/",
     "README.md",
     "LICENSE"
   ]

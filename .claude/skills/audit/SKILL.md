@@ -1,5 +1,6 @@
 ---
 name: audit
+user-invocable: true
 description: >
   Audit UI components for optical issues — identifies spacing, typography, padding,
   and visual hierarchy violations without making changes. Produces a structured report

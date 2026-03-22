@@ -1,5 +1,6 @@
 ---
 name: correct
+user-invocable: true
 description: >
   Fix optical UI issues in components — applies golden-ratio corrections to spacing,
   typography, padding, icons, and visual hierarchy. Makes changes directly. Use when

@@ -1,5 +1,6 @@
 ---
 name: golden-ui
+user-invocable: true
 description: >
   Full golden-ratio UI pass — audits, corrects, and generates tokens in one run.
   Use when you want to comprehensively improve a component or directory's visual

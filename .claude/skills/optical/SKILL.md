@@ -1,5 +1,6 @@
 ---
 name: optical
+user-invocable: true
 description: >
   Apply golden-ratio corrections to make interfaces feel balanced and intentional.
   Use when building, reviewing, or refining UI components — fixes spacing, typography,
