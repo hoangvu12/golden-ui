@@ -108,8 +108,7 @@ Skip this phase if the project already has a well-defined token system.
 
 ## Library-specific adaptation
 
-- **Tailwind**: Use nearest tokens; arbitrary values `[0.618em]` only when no close match
-- **shadcn/ui**: Modify CSS variables in `globals.css`, respect `--radius`/`--spacing`
-- **MUI/Chakra/Ant**: Use the theme spacing function
+- **Tailwind / shadcn/ui**: Use JIT arbitrary values with exact formulas — `py-[0.486em]`, `px-[0.618em]`, `mt-[-0.128em]`, `gap-[0.414em]`, `text-[1.272em]`. Never round to the nearest default token. Use `em` units so values scale with font-size context.
+- **MUI/Chakra/Ant**: Use the theme spacing function with exact values
 - **CSS Modules/Vanilla**: Use `calc()` with `em` units
-- **CSS-in-JS**: Define constants for φ steps
+- **CSS-in-JS**: Define constants for φ steps, use exact values
