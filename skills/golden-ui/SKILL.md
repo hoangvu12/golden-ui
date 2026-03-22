@@ -37,7 +37,7 @@ Works with any UI library: Tailwind, shadcn/ui, Radix, MUI, Chakra, Ant Design, 
 
 ---
 
-## Phase 1: Audit
+## Phase 1: Audit (REQUIRED — always run this)
 
 Analyze `$ARGUMENTS` for optical violations. For each issue found, note:
 - `[file:line]` what's wrong → what the fix should be
@@ -57,9 +57,9 @@ Analyze `$ARGUMENTS` for optical violations. For each issue found, note:
 
 ---
 
-## Phase 2: Correct
+## Phase 2: Correct (REQUIRED — always run this)
 
-Apply all fixes from the audit using the project's native styling system.
+Apply ALL fixes from the audit. This is the core of the skill — do not skip it.
 
 Priority order:
 1. **Optical padding** — `top_pad = font_size × (line_height / 1.618)`
