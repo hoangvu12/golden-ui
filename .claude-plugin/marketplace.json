@@ -7,9 +7,8 @@
     {
       "name": "golden-ui",
       "source": {
-        "source": "npm",
-        "package": "golden-ui",
-        "version": "^1.0.0"
+        "source": "github",
+        "repo": "hoangvu12/golden-ui"
       },
       "description": "Golden-ratio design science for any UI library"
     }
