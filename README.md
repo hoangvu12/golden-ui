@@ -12,18 +12,11 @@ Works with **any styling system**: Tailwind, shadcn/ui, Radix, MUI, Chakra, Ant 
 
 ## Install
 
-### Via skills.sh (works with Claude Code, Cursor, Copilot, and 40+ agents)
-
 ```bash
 npx skills add hoangvu12/golden-ui
 ```
 
-### Via Claude Code plugin system
-
-```bash
-/plugin marketplace add hoangvu12/golden-ui
-/plugin install golden-ui@golden-ui
-```
+Works with Claude Code, Cursor, Copilot, and [40+ agents](https://skills.sh).
 
 ## Skills
 
