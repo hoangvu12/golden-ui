@@ -1,0 +1,23 @@
+{
+  "name": "golden-ui",
+  "description": "Golden-ratio design science for any UI library. Makes interfaces feel balanced and intentional by applying φ-derived corrections to spacing, typography, padding, icons, and color.",
+  "version": "1.0.0",
+  "author": {
+    "name": "hoangvu12"
+  },
+  "homepage": "https://github.com/hoangvu12/golden-ui",
+  "repository": "https://github.com/hoangvu12/golden-ui",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "golden-ui",
+    "golden-ratio",
+    "design-system",
+    "spacing",
+    "typography",
+    "optical-correction",
+    "ui-polish",
+    "skills-sh"
+  ]
+}

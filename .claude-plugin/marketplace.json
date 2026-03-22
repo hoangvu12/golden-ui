@@ -1,0 +1,17 @@
+{
+  "name": "golden-ui",
+  "owner": {
+    "name": "hoangvu12"
+  },
+  "plugins": [
+    {
+      "name": "golden-ui",
+      "source": {
+        "source": "npm",
+        "package": "golden-ui",
+        "version": "^1.0.0"
+      },
+      "description": "Golden-ratio design science for any UI library"
+    }
+  ]
+}

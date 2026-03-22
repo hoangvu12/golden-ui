@@ -1,0 +1,27 @@
+{
+  "name": "golden-ui",
+  "version": "1.0.0",
+  "description": "Golden-ratio design science for any UI library — Claude Code plugin & agent skill",
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "golden-ui",
+    "golden-ratio",
+    "design-system",
+    "ui-polish",
+    "agent-skills",
+    "skills-sh"
+  ],
+  "author": "hoangvu12",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoangvu12/golden-ui"
+  },
+  "files": [
+    ".claude-plugin/",
+    "skills/",
+    "README.md",
+    "LICENSE"
+  ]
+}
