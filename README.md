@@ -18,15 +18,13 @@ npx skills add hoangvu12/golden-ui
 
 Works with Claude Code, Cursor, Copilot, and [40+ agents](https://skills.sh).
 
-## Skills
+## Usage
 
-| Skill | Command | What it does |
-|-------|---------|-------------|
-| **golden-ui** | `/golden-ui` | Full pass — audit, correct, and generate tokens in one run |
-| **optical** | `/golden-ui:optical [path]` | Optical corrections — spacing, typography, padding, icons |
-| **audit** | `/golden-ui:audit [path]` | Read-only audit — severity-rated report, no changes |
-| **correct** | `/golden-ui:correct [path]` | Targeted fix — applies corrections directly |
-| **tokens** | `/golden-ui:tokens [css\|tailwind\|theme-object]` | Generate φ-based design tokens for your project |
+```
+/golden-ui [file-or-directory]
+```
+
+Runs a full pass: audits for optical issues, applies corrections, and generates design tokens if none exist.
 
 ## The math
 
