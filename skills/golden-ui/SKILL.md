@@ -65,7 +65,7 @@ Priority order:
 1. **Optical padding** — `top_pad = font_size × (line_height / 1.618)`
 2. **Typography** — tighten line-height for large text, negative tracking for headlines
 3. **Spacing** — snap to nearest φ-power step. See [spacing.md](reference/spacing.md)
-4. **Buttons** — asymmetric padding with icons (`padY = fontSize × 0.486`, `padX = fontSize × 0.618`)
+4. **Buttons** — `padY = fontSize × 0.486`, `padX = 1em`. When icon present: side with icon gets `padX = fontSize / φ (0.618em)`, opposite side keeps `1em`. Both icons: both sides `0.618em`. Gap between icon and text: `padY / φ^0.125 (0.414em)`
 5. **Icons** — size at 1.272em, shift up 0.128em, inverse stroke scaling
 6. **State layers** — opacity overlays over background mutations
 
