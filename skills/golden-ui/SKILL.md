@@ -106,9 +106,18 @@ Skip this phase if the project already has a well-defined token system.
 - Don't over-correct — some asymmetry is intentional
 - Size variants: only change `font-size`, let `em`-based spacing cascade
 
-## Library-specific adaptation
+## Before applying corrections
 
-- **Tailwind / shadcn/ui**: Use JIT arbitrary values with exact formulas — `py-[0.486em]`, `px-[0.618em]`, `mt-[-0.128em]`, `gap-[0.414em]`, `text-[1.272em]`. Never round to the nearest default token. Use `em` units so values scale with font-size context.
+Ask the user which approach they prefer:
+
+1. **JIT values** — Tailwind arbitrary values inline: `py-[0.486em]`, `mt-[-0.128em]`, `gap-[0.414em]`. Quick, no setup, but scattered across components.
+2. **CSS tokens** — Define φ-based custom properties in the project's CSS (e.g. `globals.css`), then use them: `py-[var(--phi-pad-y)]`. Clean, centralized, reusable.
+
+Wait for their answer before proceeding with Phase 2.
+
+## Library-specific notes
+
+- **Tailwind / shadcn/ui**: Use `em` units in JIT values so they scale with font-size context. For tokens, add custom properties to `globals.css` or extend `tailwind.config`.
 - **MUI/Chakra/Ant**: Use the theme spacing function with exact values
 - **CSS Modules/Vanilla**: Use `calc()` with `em` units
-- **CSS-in-JS**: Define constants for φ steps, use exact values
+- **CSS-in-JS**: Define constants for φ steps
